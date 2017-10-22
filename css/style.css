@@ -61,14 +61,22 @@ body {
 #container {
 	width: 960px;
 	margin: auto;
+    padding: 5px;
+
 }
 
 header {
-
+    padding: 5px;
+    margin: 5px;
 }
 
 div {
     border: 1px solid black;
+    padding: 25px;
+    margin: 25px;
+    width: 100px;
+    height: 100px;
+    float:left;
 }
 
 footer {
