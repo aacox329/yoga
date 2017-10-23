@@ -74,8 +74,27 @@ div {
     float:left;
 }
 
+img{
+
+}
+
 footer {
 
+}
+
+#base {
+    background-color: gray;
+    width: 300px;
+    height: 300px;
+}
+
+#seq {
+    background-color: green;
+    width: 300px;
+    height: 300px;
+}
+#noImg{
+    display: none;
 }
 
 /******************************************
