@@ -11,9 +11,11 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet">
+        <link href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
 
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="js/main.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 	</head>
 	<body>
@@ -24,8 +26,10 @@
 
 
             <div id="pose-container" class="dst" ondrop="remove(event)" ondragover="allowDrop(event)">
-                <label for="search">Pose:</label>
-                <input id="search" type="text">
+                <div class="ui-widget">
+                    <label for="search">Pose:</label>
+                    <input id="search" type="text">
+                </div>
                 <p class="error" id="noImg">Does not exist</p>
                 <p class="error" id="alreadyExists">Already exists</p>
 

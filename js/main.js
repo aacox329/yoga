@@ -125,7 +125,7 @@ $(document).ready(function (){
     var searchResult = $("#search");
     if (searchResult && searchResult[0]) {
         searchResult[0].addEventListener("change", search);
-        //searchResult.autocomplete({source: imageList});
+        searchResult.autocomplete({source: imageList});
     }
     var addSection = $("#section");
     if (addSection && addSection[0]) {
