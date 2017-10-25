@@ -96,7 +96,7 @@ function search(ev){
     // Reset errors first, then reapply if need be
     $(".error").slideUp();
     var searchItem= this.value.trim();  // trim to ignore any trailing spaces or newlines
-    this.value = searchItem;  // Let user know we are trimming
+    this.value = ""; // reset the input
     if (searchItem.length && $("."+searchItem).length){
         // First, make sure we havent already loaded it
         // NOTE: second term in if conditional statement wont execute if first term fails...so it is ok, we will never call $(".")
@@ -104,7 +104,7 @@ function search(ev){
     } else if(imageList.includes(searchItem)){
         // If not, make sure it is a valid option
         var source= "images/StickSanEng/"+searchItem+".jpg";
-        $("#base").append("<div class='pose "+searchItem+"' draggable='true' ondragstart='drag(event)'><p>"+searchItem+"</p><img src='"+source+"'></div>");
+        $("#base").append("<div class='pose "+searchItem+"' draggable='true' ondragstart='drag(event)'><img src='"+source+"'></div>");
     } else if(searchItem.length) {
         // If not a valid option, and text was entered
         $("#noImg").slideDown();
