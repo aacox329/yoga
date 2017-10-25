@@ -73,8 +73,10 @@ function search(ev){
         $("#base").append("<div class='pose' id='"+String(counter)+"' draggable='true' ondragstart='drag(event)'><p>"+String(counter)+"</p><img src='"+source+"'></div>");
         counter++;
         $("#noImg").slideUp();
-    } else {
+    } else if(searchItem.length) {
         $("#noImg").slideDown();
+    } else {
+        $("#noImg").slideUp();
     }
 };
 
