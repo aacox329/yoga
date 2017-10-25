@@ -47,9 +47,11 @@ Developer @GA in NYC
 
 body {
      color: #000;
+     background-color: #dddfd4;
      font-size: 12px;
      line-height: 1.4;
      font-family: Helvetica, Arial, sans-serif;
+     font-family: 'Vast Shadow', cursive;
 }
 
 
@@ -59,22 +61,32 @@ body {
 
 /* Center the container */
 
+#container {
+    width: 600px;
+    margin: auto;
+    padding: 25px;
+    color: black;
+
+}
 
 header {
     padding: 5px;
     margin: 5px;
+    align-items: center;
+
 }
 
 div {
-    border: 1px solid black;
-    padding: 25px;
-    margin: 25px;
+    padding: 1em;
+    margin: 1em;
     width: 100px;
     height: 100px;
-    float:left;
+
 }
 
 img{
+    height: 100px;
+    width: 100px;
 
 }
 
@@ -84,19 +96,24 @@ footer {
 
 #base {
     background-color: gray;
-    width: 300px;
-    height: 300px;
+    width: auto;
+    height: auto;
 }
 
 #seq {
-    background-color: green;
-    width: 300px;
-    height: 300px;
+    
 }
 #noImg{
     display: none;
 }
 
+#search{
+
+}
+
+#section{
+
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

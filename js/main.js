@@ -58,14 +58,8 @@ function drop(ev){
     if (ev.target.classList.contains("dst")) {
         node.appendChild(document.getElementById(data));
     } else {
-        console.log('starting the bubble up.');
-        console.log(node);
-        console.log(node.classList);
         while(!node.classList.contains("pose")) {
             node = node.parentElement;
-            console.log('reasign to the parent');
-            console.log(node);
-            console.log(node.classList);
         }
         $(document.getElementById(data)).insertBefore(node);
     }
@@ -89,7 +83,6 @@ function search(ev){
 //add input text to h2
 function section(ev){
     var sectionName = $(this)[0].value;
-    console.log(sectionName);
         $ ('<div class="seq dst" ondrop="drop(event)" ondragover="allowDrop(event)"><h2>' + sectionName + '</h2></div>').appendTo("body");
 //reset input to have no text
     $(this)[0].value = "";
