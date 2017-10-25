@@ -60,12 +60,45 @@ body {
 /*******************************************/
 
 /* Center the container */
+/*ToDo list:
+thumbnail animation
+"section" div sizing/right alignment
+"search" div sizing and left alignment
+opaque divs for section and search
+size the image divs
+max size for section div - tell images to align accordingly
+*/
 
 #container {
-    width: 600px;
-    margin: auto;
+    width: 100%;
     padding: 25px;
     color: black;
+
+}
+
+#pose-container {
+    float: left;
+    width: 40%;
+    margin: 10px;
+
+}
+
+#section-container {
+    float: right;
+    width: 40%;
+    margin: 10px;
+
+}
+.seq{
+    min-height: 120px;
+    max-height: 360px;
+    background-color: #93C178;
+    font-size: 12px;
+    padding-left: 3px;
+    border-radius: 10px;
+    border: 3px solid #465C8B;
+    margin: 10px;
+    opacity: .03px;
 
 }
 
@@ -73,14 +106,6 @@ header {
     padding: 5px;
     margin: 5px;
     align-items: center;
-
-}
-
-div {
-    padding: 1em;
-    margin: 1em;
-    width: 100px;
-    height: 100px;
 
 }
 
@@ -95,17 +120,13 @@ footer {
 }
 
 #base {
-    background-color: gray;
-    width: auto;
-    height: auto;
+
 }
 
-#seq {
-    
-}
-#noImg{
+
+.error {
     display: none;
-}
+} /*does not exist and already exist*/
 
 #search{
 

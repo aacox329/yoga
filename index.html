@@ -22,20 +22,24 @@
 				<h1>Yoga Sequencing</h1>
 			</header>
 
-            <label for="pose">Pose:</label>
-            <input id="search" type="text">
+
+            <div id="pose-container">
+                <label for="pose">Pose:</label>
+                <input id="search" type="text">
                 <p class="error" id="noImg">Does not exist</p>
                 <p class="error" id="alreadyExists">Already exists</p>
-            <label for="section">Section:</label>
-            <input id="section" type="text">
 
-            <div id="base" class="dst" ondrop="remove(event)" ondragover="allowDrop(event)">
-                <div class="pose" id="one" draggable="true" ondragstart="drag(event)">test</div>
+                <div id="base" class="dst" ondrop="remove(event)" ondragover="allowDrop(event)">
+                    <div class="pose" id="one" draggable="true" ondragstart="drag(event)">test</div>
+                </div>
             </div>
 
-			<footer>
+            <div id="section-container">
+                <label for="section">Section:</label>
+                <input id="section" type="text">
 
-			</footer>
+            </div>
         </div>
+
 	</body>
 </html>

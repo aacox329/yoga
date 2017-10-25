@@ -85,7 +85,7 @@ function search(ev){
 //add input text to h2
 function section(ev){
     var sectionName = $(this)[0].value;
-        $("#container").append('<div class="seq dst" ondrop="drop(event)" ondragover="allowDrop(event)"><h2>' + sectionName + '</h2></div>');
+        $("#section-container").append('<div class="seq dst" ondrop="drop(event)" ondragover="allowDrop(event)"><h2>' + sectionName + '</h2></div>');
 //reset input to have no text
     $(this)[0].value = "";
 
