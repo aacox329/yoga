@@ -23,13 +23,13 @@
 			</header>
 
 
-            <div id="pose-container">
+            <div id="pose-container" class="dst" ondrop="remove(event)" ondragover="allowDrop(event)">
                 <label for="search">Pose:</label>
                 <input id="search" type="text">
                 <p class="error" id="noImg">Does not exist</p>
                 <p class="error" id="alreadyExists">Already exists</p>
 
-                <div id="base" class="dst" ondrop="remove(event)" ondragover="allowDrop(event)">
+                <div id="base">
                 </div>
             </div>
 
